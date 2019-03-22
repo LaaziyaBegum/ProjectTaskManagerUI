@@ -15,7 +15,7 @@ var options = { headers: headersObj};
 export class PMTaskService {  
   task : Task; 
   constructor( private http:HttpClient) { }
-  baseUrl: string = 'http://localhost:5555/api/Task';
+  baseUrl: string = 'http://localhost:49755/api/Task';
 
   getTasks():Observable<Task[]>{              
     return this.http.get<Task[]>(this.baseUrl);             
